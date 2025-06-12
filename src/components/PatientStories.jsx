@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 const stories = [
   {
     img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=100&q=80",
     alt: "Patient 1",
+    title: "Every Appointment Felt Like a Step Toward Healing",
+    quote:
+      "“Dr. Amit’s positivity, precision, and patience made all the difference. I felt more than a patient. I felt truly cared for.”",
+    name: "Rajesh Verma, Thyroid Cancer",
   },
   {
     img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80",
     alt: "Patient 2",
+    title: "A Journey from Fear to Confidence",
+    quote:
+      "“The team explained everything so well. I always felt supported and confident in my treatment.”",
+    name: "Priya Sharma, Oral Cancer",
   },
   {
     img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=100&q=80",
     alt: "Patient 3",
+    title: "Care Beyond Treatment",
+    quote:
+      "“Not just medical care, but emotional support too. I am grateful for the compassion I received.”",
+    name: "Amit Patel, Laryngeal Cancer",
   },
 ];
 
 const PatientStories = () => {
+  const [selected, setSelected] = useState(0);
+
   return (
     <div className="bg-[#f8e9dc] py-10 px-4">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
@@ -29,7 +43,13 @@ const PatientStories = () => {
               key={idx}
               src={story.img}
               alt={story.alt}
-              className="w-16 h-16 rounded-lg object-cover border-2 border-white shadow"
+              className={`w-16 h-16 rounded-lg object-cover border-2 shadow cursor-pointer transition-all duration-200 ${
+                selected === idx
+                  ? "border-[#7b223c] ring-2 ring-[#7b223c]"
+                  : "border-white"
+              }`}
+              onMouseEnter={() => setSelected(idx)}
+              onClick={() => setSelected(idx)}
             />
           ))}
         </div>
@@ -37,14 +57,13 @@ const PatientStories = () => {
         <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center p-6 md:p-8 flex-1 max-w-2xl">
           <div className="flex-1">
             <h3 className="text-xl md:text-2xl font-bold text-[#7b223c] mb-2">
-              Every Appointment Felt Like a Step Toward Healing
+              {stories[selected].title}
             </h3>
             <p className="text-gray-600 text-sm md:text-base mb-4">
-              “Dr. Amit’s positivity, precision, and patience made all the
-              difference. I felt more than a patient. I felt truly cared for.”
+              {stories[selected].quote}
             </p>
             <div className="text-right text-[#7b223c] font-semibold text-sm">
-              Rajesh Verma, Thyroid Cancer
+              {stories[selected].name}
             </div>
           </div>
           <div className="ml-0 md:ml-8 mt-4 md:mt-0 flex-shrink-0">
