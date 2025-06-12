@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       <MeetDr />
       <ConditionsProcedures />
       <WhyChoose />

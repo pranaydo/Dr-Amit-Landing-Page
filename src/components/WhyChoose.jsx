@@ -98,10 +98,7 @@ const features = [
 
 const WhyChoose = () => {
   return (
-    <div
-      className="py-8 px-4 max-w-6xl mx-auto "
-      style={{ backgroundColor: "#f8e9dc" }}
-    >
+    <div className="py-8 px-4  mx-auto " style={{ backgroundColor: "#f8e9dc" }}>
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
         Why Patients Choose Dr. Amit
       </h2>
