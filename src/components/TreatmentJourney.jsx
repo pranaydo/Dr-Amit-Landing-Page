@@ -23,20 +23,22 @@ const steps = [
 const TreatmentJourney = () => {
   return (
     <div
-      className="relative px-2 sm:px-4 bg-cover bg-center py-10 sm:py-16 md:py-24"
-      style={{
-        backgroundImage: `url(${bgImg})`,
-      }}
+      className="relative bg-cover bg-center py-6 pb-8 px-2 sm:px-4"
+      // style={{
+      //   backgroundImage: `url(${bgImg})`,
+      // }}
     >
-      <div className="w-full max-w-5xl mx-auto">
+      {/* Overlay for better readability */}
+      <div className="absolute inset-0 bg-black opacity-50 z-0" />
+      <div className="relative z-10 w-full max-w-5xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 drop-shadow">
           Your Treatment Journey
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white bg-opacity-95 rounded-xl shadow-lg flex items-start p-6"
+              className="bg-white bg-opacity-95 rounded-xl sm:rounded-2xl shadow-lg flex items-start p-6 w-full mx-auto"
             >
               <div className="text-4xl font-bold text-[#7b223c] mr-4">
                 {idx + 1}

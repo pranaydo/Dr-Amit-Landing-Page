@@ -121,6 +121,29 @@ const WhyChoose = () => {
           />
         </div> */}
       </div>
+      {/* <button
+        type="submit"
+        className="bg-[#a6012d] w-40 text-white font-semibold py-2 rounded"
+        onClick={() => {
+          const el = document.getElementById("appointment-form");
+          el?.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Book Appointment
+      </button> */}
+
+      <div className="flex justify-center">
+        <button
+          type="submit"
+          className="bg-[#a6012d] w-40 text-white font-semibold py-2  mt-4 rounded"
+          onClick={() => {
+            const el = document.getElementById("appointment-form");
+            el?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Book Appointment
+        </button>
+      </div>
     </div>
   );
 };

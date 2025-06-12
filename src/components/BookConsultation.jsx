@@ -21,9 +21,9 @@ const BookConsultation = () => {
   return (
     <div
       className="relative bg-cover bg-center py-12 px-4"
-      style={{
-        backgroundImage: `url(${bgImg})`,
-      }}
+      // style={{
+      //   backgroundImage: `url(${bgImg})`,
+      // }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-70 pointer-events-none" />
