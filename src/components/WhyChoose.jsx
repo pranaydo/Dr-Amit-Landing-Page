@@ -102,7 +102,7 @@ const WhyChoose = () => {
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
         Why Patients Choose Dr. Amit
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {features.map((feature, idx) => (
           <div
             key={idx}
@@ -113,24 +113,20 @@ const WhyChoose = () => {
             <div className="text-xs text-gray-500 mt-1">{feature.subtitle}</div>
           </div>
         ))}
-        {/* <div className="bg-white rounded-xl border border-gray-200 shadow-sm flex items-center justify-center p-0 overflow-hidden min-h-[140px]">
-          <img
-            src="https://images.unsplash.com/photo-1519494080410-f9aa8f52f1e1?auto=format&fit=crop&w=400&q=80"
-            alt="Dr. Amit with patient"
-            className="object-cover w-full h-full"
-          />
-        </div> */}
+      </div> */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        {features.map((feature, idx) => (
+          <div
+            key={idx}
+            className="bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center text-center p-5 min-h-[140px]"
+          >
+            <div className="mb-3 text-3xl">{feature.icon}</div>
+            <div className="font-semibold text-[#7b223c]">{feature.title}</div>
+            <div className="text-xs text-gray-500 mt-1">{feature.subtitle}</div>
+          </div>
+        ))}
       </div>
-      {/* <button
-        type="submit"
-        className="bg-[#a6012d] w-40 text-white font-semibold py-2 rounded"
-        onClick={() => {
-          const el = document.getElementById("appointment-form");
-          el?.scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        Book Appointment
-      </button> */}
 
       <div className="flex justify-center">
         <button

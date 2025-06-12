@@ -86,33 +86,33 @@ const BookConsultation = () => {
           className="bg-white rounded-2xl shadow-lg p-6 md:p-8 w-full max-w-md flex flex-col gap-4"
           onSubmit={handleSubmit}
         >
-          <div className="flex gap-3">
-            <div className="flex-1">
+          <div className=" gap-3">
+            {/* <div className="flex-1"> */}
+            <label className="block text-sm font-medium mb-1">
+              Full Name<span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="fullName"
+              required
+              value={form.firstName}
+              onChange={handleChange}
+              className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
+              placeholder="Full Name"
+            />
+            {/* </div> */}
+            <div className="">
               <label className="block text-sm font-medium mb-1">
-                First Name<span className="text-red-500">*</span>
+                Email<span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
-                name="firstName"
-                required
-                value={form.firstName}
-                onChange={handleChange}
-                className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
-                placeholder="First Name"
-              />
-            </div>
-            <div className="flex-1">
-              <label className="block text-sm font-medium mb-1">
-                Last Name<span className="text-red-500">*</span>
-              </label>
-              <input
-                type="text"
-                name="lastName"
+                name="email"
                 required
                 value={form.lastName}
                 onChange={handleChange}
                 className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
-                placeholder="Last Name"
+                placeholder="Email"
               />
             </div>
           </div>
@@ -130,17 +130,7 @@ const BookConsultation = () => {
               placeholder="Phone"
             />
           </div>
-          <div>
-            <label className="block text-sm font-medium mb-1">Message</label>
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
-              placeholder="Write your message or query…"
-              rows={3}
-            />
-          </div>
+
           <div className="flex justify-center">
             <button
               type="submit"
