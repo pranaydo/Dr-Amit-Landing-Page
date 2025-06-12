@@ -9,11 +9,8 @@ const Footer = () => (
         <img
           src={dramitlogo}
           alt="Dr. Amit's Cancer Care"
-          className="h-8 w-8 object-contain"
+          className="h-8 w-auto object-contain"
         />
-        {/* <span className="font-semibold text-[#7b223c] text-lg">
-          Dr. Amit’s Cancer Care
-        </span> */}
       </div>
       {/* Address */}
       <div className="text-center md:text-left text-gray-700 text-sm">
@@ -26,10 +23,19 @@ const Footer = () => (
       </div>
       {/* Call button */}
       <a
-        href="tel:+918657717994"
-        className="bg-[#7b223c] text-white font-semibold px-5 py-2 rounded-full hover:bg-[#5a182c] transition"
+        href="tel:+918657717988"
+        className="bg-[#a6012d] text-white text-sm font-semibold px-4 py-2 rounded-sm flex items-center gap-2"
       >
-        +91-86577 17994
+        <svg
+          className="w-4 h-4 text-white"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M22 16.92V19a2 2 0 01-2.18 2A19.72 19.72 0 013 5.18 2 2 0 015 3h2.09a2 2 0 012 1.72c.13 1.05.37 2.07.7 3.06a2 2 0 01-.45 2.11l-.91.91a16 16 0 006.29 6.29l.91-.91a2 2 0 012.11-.45c.99.33 2.01.57 3.06.7a2 2 0 011.72 2z" />
+        </svg>
+        8657717988
       </a>
     </div>
   </footer>

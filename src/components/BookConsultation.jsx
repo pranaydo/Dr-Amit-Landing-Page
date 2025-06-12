@@ -141,12 +141,14 @@ const BookConsultation = () => {
               rows={3}
             />
           </div>
-          <button
-            type="submit"
-            className="w-full bg-[#7b223c] text-white font-semibold py-2 rounded hover:bg-[#5a182c] transition"
-          >
-            Book Appointment
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-[#a6012d] w-40 text-white font-semibold py-2 rounded"
+            >
+              Book Appointment
+            </button>
+          </div>
         </form>
       </div>
     </div>
