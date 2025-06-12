@@ -3,7 +3,7 @@ import banner from "../assets/banner-img.webp"; // Replace with actual image
 
 const MeetDr = () => {
   return (
-    <section className="bg-[#7a0c2e] text-white px-4 py-12 lg:px-20 lg:py-20">
+    <section className="bg-[#a6012d] text-white px-4 py-12 lg:px-20 lg:py-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
         {/* Left - Doctor Image & Label */}
         <div className="text-center lg:text-left">

@@ -1,4 +1,5 @@
 import React from "react";
+import bgImg from "../assets/14.png";
 
 const steps = [
   {
@@ -22,10 +23,9 @@ const steps = [
 const TreatmentJourney = () => {
   return (
     <div
-      className="relative py-12 px-2 sm:px-4 bg-cover bg-center min-h-[700px] flex items-center"
+      className="relative px-2 sm:px-4 bg-cover bg-center py-10 sm:py-16 md:py-24"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80')",
+        backgroundImage: `url(${bgImg})`,
       }}
     >
       <div className="w-full max-w-5xl mx-auto">

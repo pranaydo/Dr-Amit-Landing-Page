@@ -7,7 +7,7 @@ import {
   FaUserMd,
   FaProcedures,
 } from "react-icons/fa";
-import procedureImg from "../assets/13.png"; // Replace with actual image
+import procedureImg from "../assets/13.webp"; // Replace with actual image
 
 const ConditionsProcedures = () => {
   const conditions = [
@@ -56,11 +56,24 @@ const ConditionsProcedures = () => {
         </div>
 
         {/* Right - Image */}
-        <div className="lg:w-1/2">
+        {/* <div className="lg:w-1/2">
           <img
             src={procedureImg}
             alt="Procedures illustration"
-            className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+            style={{ borderRadius: "16px" }}
+            className="w-full max-w-md mx-auto"
+          />
+        </div> */}
+
+        <div
+          className="lg:w-1/2 overflow-hidden"
+          style={{ borderRadius: "16px" }}
+        >
+          <img
+            src={procedureImg}
+            alt="Procedures illustration"
+            className="w-full max-w-md mx-auto"
+            style={{ display: "block", width: "100%", height: "auto" }}
           />
         </div>
       </div>

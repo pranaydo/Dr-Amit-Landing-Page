@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../assets/12.png"; // Assuming you have a background image
+import bgImg from "../assets/12.png";
 
 const BookConsultation = () => {
   const [form, setForm] = useState({
@@ -15,18 +15,19 @@ const BookConsultation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (API call or email)
     alert("Appointment request submitted!");
   };
 
   return (
     <div
-      className="bg-[#111] bg-cover bg-center py-12 px-4"
+      className="relative bg-cover bg-center py-12 px-4"
       style={{
         backgroundImage: `url(${bgImg})`,
       }}
     >
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black opacity-70 pointer-events-none" />
+      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
         {/* Left: Info */}
         <div className="flex-1 text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -146,12 +147,6 @@ const BookConsultation = () => {
           >
             Book Appointment
           </button>
-          {/* <a
-            href="tel:+918657717994"
-            className="w-full mt-2 text-center border border-[#7b223c] text-[#7b223c] font-semibold py-2 rounded hover:bg-[#f7e5dd] transition"
-          >
-            Call Now
-          </a> */}
         </form>
       </div>
     </div>
