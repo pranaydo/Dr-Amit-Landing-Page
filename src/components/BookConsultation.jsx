@@ -2,20 +2,42 @@ import React, { useState } from "react";
 import bgImg from "../assets/12.png";
 
 const BookConsultation = () => {
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
-    message: "",
-  });
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    console.log(event, "event");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Appointment request submitted!");
+    const formData = {
+      fullName: fullName,
+      email: email,
+      phone: phone,
+      // timestamp: new Date().toISOString(), // Add a timestamp
+    };
+
+    try {
+      const response = await fetch(
+        "https://hooks.zapier.com/hooks/catch/22908877/uycgz9d/",
+        {
+          method: "POST",
+          // headers: {
+          //   "Content-Type": "application/json",
+          // },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (response.ok) {
+        setFullName("");
+        setEmail("");
+        setPhone("");
+      }
+
+      console.log(response, "response");
+    } catch (error) {
+      console.error("Error during API call:", error);
+    }
   };
 
   return (
@@ -95,8 +117,8 @@ const BookConsultation = () => {
               type="text"
               name="fullName"
               required
-              value={form.firstName}
-              onChange={handleChange}
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
               className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
               placeholder="Full Name"
             />
@@ -109,8 +131,8 @@ const BookConsultation = () => {
                 type="text"
                 name="email"
                 required
-                value={form.lastName}
-                onChange={handleChange}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
                 placeholder="Email"
               />
@@ -124,8 +146,8 @@ const BookConsultation = () => {
               type="tel"
               name="phone"
               required
-              value={form.phone}
-              onChange={handleChange}
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
               className="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#7b223c]"
               placeholder="Phone"
             />
