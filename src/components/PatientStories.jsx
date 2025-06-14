@@ -31,7 +31,7 @@ const PatientStories = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className="bg-[#f8e9dc] py-10 px-4">
+    <div className=" py-10 px-4">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
         Patient Stories of Hope
       </h2>

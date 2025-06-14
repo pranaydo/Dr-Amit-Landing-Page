@@ -40,8 +40,8 @@ const ConditionsProcedures = () => {
     <section className="bg-gray-100 px-4 py-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         {/* Left - Text & List */}
-        <div className="lg:w-1/2">
-          <h2 className="text-2xl font-bold text-[#7a0c2e] mb-6">
+        <div className="lg:w-1/2 lg:pl-24">
+          <h2 className="text-3xl font-bold text-[#7a0c2e] mb-6">
             Conditions & Procedures Treated
           </h2>
 
@@ -49,21 +49,11 @@ const ConditionsProcedures = () => {
             {conditions.map((item, index) => (
               <li key={index} className="flex items-start gap-3">
                 <span>{item.icon}</span>
-                <p className="text-gray-800 text-sm">{item.label}</p>
+                <p className="text-gray-800 text-xl">{item.label}</p>
               </li>
             ))}
           </ul>
         </div>
-
-        {/* Right - Image */}
-        {/* <div className="lg:w-1/2">
-          <img
-            src={procedureImg}
-            alt="Procedures illustration"
-            style={{ borderRadius: "16px" }}
-            className="w-full max-w-md mx-auto"
-          />
-        </div> */}
 
         <div
           className="lg:w-1/2 overflow-hidden"

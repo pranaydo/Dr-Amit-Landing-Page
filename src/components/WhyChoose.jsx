@@ -122,8 +122,10 @@ const WhyChoose = () => {
             className="bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center text-center p-5 min-h-[140px]"
           >
             <div className="mb-3 text-3xl">{feature.icon}</div>
-            <div className="font-semibold text-[#7b223c]">{feature.title}</div>
-            <div className="text-xs text-gray-500 mt-1">{feature.subtitle}</div>
+            <div className="font-semibold text-2xl text-[#7b223c]">
+              {feature.title}
+            </div>
+            <div className="text-xl text-gray-500 mt-1">{feature.subtitle}</div>
           </div>
         ))}
       </div>
