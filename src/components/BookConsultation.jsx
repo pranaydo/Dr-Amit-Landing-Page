@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import bgImg from "../assets/12.png";
+import { useNavigate } from "react-router-dom";
 
 const BookConsultation = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission behavior
@@ -32,6 +34,7 @@ const BookConsultation = () => {
         setFullName("");
         setEmail("");
         setPhone("");
+        navigate("/thank-you");
       }
 
       console.log(response, "response");

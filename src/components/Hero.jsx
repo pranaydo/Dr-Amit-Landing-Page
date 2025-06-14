@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import doc from "../assets/banner-img.webp";
 import operative from "../assets/doctor-operating.webp";
+import { useNavigate } from "react-router-dom";
+
 const HeroWithForm = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission behavior
@@ -31,6 +34,7 @@ const HeroWithForm = () => {
         setFullName("");
         setEmail("");
         setPhone("");
+        navigate("/thank-you");
       }
 
       console.log(response, "response");
