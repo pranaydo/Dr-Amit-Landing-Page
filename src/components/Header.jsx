@@ -1,7 +1,7 @@
 import dramitlogo from "../assets/dramitlogo.webp";
 const Header = () => {
   return (
-    <header className="bg-white shadow-md px-4 py-4 flex justify-between items-center">
+    <header className="bg-white shadow-md px-8 py-4 flex justify-between items-center">
       <div className="flex items-center text-white">
         <img src={dramitlogo} alt="Dr. Amit Logo" className="h-8 w-auto" />
       </div>
@@ -9,10 +9,10 @@ const Header = () => {
       {/* Call Now Button */}
       <a
         href="tel:+918657717988"
-        className="bg-[#a6012d] text-white text-sm font-semibold px-4 py-2 rounded-sm flex items-center gap-2"
+        className="bg-[#a6012d] hover:bg-white hover:text-black text-white text-sm font-semibold px-4 py-2 rounded-sm flex items-center gap-2 border-2 border-[#a6012d] "
       >
         <svg
-          className="w-4 h-4 text-white"
+          className="w-4 h-4 "
           fill="none"
           stroke="currentColor"
           strokeWidth="2"

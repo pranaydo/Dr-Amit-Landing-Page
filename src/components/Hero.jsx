@@ -14,7 +14,6 @@ const HeroWithForm = () => {
       fullName: fullName,
       email: email,
       phone: phone,
-      // timestamp: new Date().toISOString(), // Add a timestamp
     };
 
     try {
@@ -45,13 +44,14 @@ const HeroWithForm = () => {
         <div className="md:w-1/2 flex flex-col items-center text-center">
           <img src={operative} alt="Doctor" className="rounded-lg w-60 mb-6" />
           <h1 className="text-3xl md:text-4xl font-semibold mb-2">
-            Head & Neck Cancer Specialist <br /> Dr. Amit Chakraborty, Mumbai
+            Head & Neck Cancer Specialist <br />{" "}
+            <span className="text-[#be953f]">Dr. Amit Chakraborty,</span> Mumbai
           </h1>
-          <p className="text-sm md:text-base text-gray-300">
+          <p className="text-xl md:text-base text-gray-300">
             18+ yrs experience · Robotic & minimally-invasive surgery
           </p>
           <div className="flex flex-wrap justify-between gap-4 p-4">
-            <div className="flex-1 min-w-[70px] max-w-[100px] bg-white shadow rounded p-3 text-center">
+            <div className="flex-1 min-w-[70px] max-w-[100px]   rounded p-3 text-center">
               <svg
                 width="50"
                 height="50"
@@ -87,7 +87,7 @@ const HeroWithForm = () => {
                 ></path>{" "}
               </svg>
             </div>
-            <div className="flex-1 min-w-[70px] max-w-[100px] bg-white shadow rounded p-3 text-center">
+            <div className="flex-1 min-w-[70px] max-w-[100px]  rounded p-3 text-center">
               <svg
                 width="50"
                 height="50"
@@ -115,7 +115,7 @@ const HeroWithForm = () => {
                 ></path>{" "}
               </svg>
             </div>
-            <div className="flex-1 min-w-[70px] max-w-[100px] bg-white shadow rounded p-3 text-center">
+            <div className="flex-1 min-w-[70px] max-w-[100px]  rounded p-3 text-center">
               <svg
                 width="50"
                 height="50"
@@ -193,7 +193,7 @@ const HeroWithForm = () => {
                 ></path>{" "}
               </svg>
             </div>
-            <div className="flex-1 min-w-[70px] max-w-[100px] bg-white shadow rounded p-3 text-center">
+            <div className="flex-1 min-w-[70px] max-w-[100px]  rounded p-3 text-center">
               <svg
                 width="50"
                 height="50"
@@ -292,7 +292,7 @@ const HeroWithForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-[#a6012d] w-40 text-white font-semibold py-2 rounded"
+                className="bg-[#a6012d]  hover:text-black hover:bg-white border-2 border-[#a6012d] w-40 text-white font-semibold py-2 rounded"
               >
                 Book Appointment
               </button>

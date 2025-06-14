@@ -7,7 +7,7 @@ import {
   FaUserMd,
   FaProcedures,
 } from "react-icons/fa";
-import procedureImg from "../assets/13.webp"; // Replace with actual image
+import procedureImg from "../assets/neck.webp"; // Replace with actual image
 
 const ConditionsProcedures = () => {
   const conditions = [
@@ -37,7 +37,7 @@ const ConditionsProcedures = () => {
     },
   ];
   return (
-    <section className="bg-gray-100 px-4 py-12 lg:px-20">
+    <section className=" px-4 py-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         {/* Left - Text & List */}
         <div className="lg:w-1/2 lg:pl-24">
@@ -49,22 +49,21 @@ const ConditionsProcedures = () => {
             {conditions.map((item, index) => (
               <li key={index} className="flex items-start gap-3">
                 <span>{item.icon}</span>
-                <p className="text-gray-800 text-xl">{item.label}</p>
+                <p className="text-black-800 text-xl">{item.label}</p>
               </li>
             ))}
           </ul>
         </div>
 
-        <div
-          className="lg:w-1/2 overflow-hidden"
-          style={{ borderRadius: "16px" }}
-        >
-          <img
-            src={procedureImg}
-            alt="Procedures illustration"
-            className="w-full max-w-md mx-auto"
-            style={{ display: "block", width: "100%", height: "auto" }}
-          />
+        <div className="lg:w-1/2 overflow-hidden flex justify-center items-center">
+          <div className="w-full max-w-md aspect-[4/3] border-2 border-[#7a0c2e] shadow-lg rounded-tr-3xl rounded-bl-3xl overflow-hidden flex items-center justify-center bg-white">
+            <img
+              src={procedureImg}
+              alt="Procedures illustration"
+              className="w-full h-full object-cover"
+              style={{ display: "block" }}
+            />
+          </div>
         </div>
       </div>
     </section>

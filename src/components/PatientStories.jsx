@@ -31,19 +31,19 @@ const PatientStories = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className=" py-10 px-4">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
+    <div className="py-16 px-4 min-h-[520px]">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#7b223c]">
         Patient Stories of Hope
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-5xl mx-auto min-h-[380px]">
         {/* Side images */}
-        <div className="flex md:flex-col gap-4">
+        <div className="flex md:flex-col gap-6">
           {stories.map((story, idx) => (
             <img
               key={idx}
               src={story.img}
               alt={story.alt}
-              className={`w-16 h-16 rounded-lg object-cover border-2 shadow cursor-pointer transition-all duration-200 ${
+              className={`w-24 h-28 rounded-xl object-cover border-2 shadow cursor-pointer transition-all duration-200 ${
                 selected === idx
                   ? "border-[#7b223c] ring-2 ring-[#7b223c]"
                   : "border-white"
@@ -54,21 +54,24 @@ const PatientStories = () => {
           ))}
         </div>
         {/* Main story card */}
-        <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center p-6 md:p-8 flex-1 max-w-2xl">
+        <div
+          className="bg-[#f8e9dc] rounded-2xl shadow-lg flex flex-col md:flex-row items-center p-10 md:p-14 flex-1 max-w-3xl min-h-[320px] shadow-2xl
+"
+        >
           <div className="flex-1">
-            <h3 className="text-xl md:text-2xl font-bold text-[#7b223c] mb-2">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#7b223c] mb-4">
               {stories[selected].title}
             </h3>
-            <p className="text-gray-600 text-sm md:text-base mb-4">
+            <p className="text-gray-600 text-base md:text-lg mb-6">
               {stories[selected].quote}
             </p>
-            <div className="text-right text-[#7b223c] font-semibold text-sm">
+            <div className="text-right text-[#7b223c] font-semibold text-base">
               {stories[selected].name}
             </div>
           </div>
-          <div className="ml-0 md:ml-8 mt-4 md:mt-0 flex-shrink-0">
+          <div className="ml-0 md:ml-12 mt-6 md:mt-0 flex-shrink-0">
             {/* Awareness ribbon SVG */}
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
               <path
                 d="M32 8C22 8 16 18 16 26c0 10 16 30 16 30s16-20 16-30c0-8-6-18-16-18z"
                 fill="#f7e5dd"

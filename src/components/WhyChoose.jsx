@@ -98,28 +98,50 @@ const features = [
 
 const WhyChoose = () => {
   return (
-    <div className="py-8 px-4  mx-auto " style={{ backgroundColor: "#f8e9dc" }}>
+    // <div className="py-8 px-4  mx-auto " style={{ backgroundColor: "#f8e9dc" }}>
+    //   <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
+    //     Why Patients Choose Dr. Amit
+    //   </h2>
+
+    //   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+    //     {features.map((feature, idx) => (
+    //       <div
+    //         key={idx}
+    //         className="bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center text-center p-5 min-h-[140px]"
+    //       >
+    //         <div className="mb-3 text-3xl">{feature.icon}</div>
+    //         <div className="font-semibold text-2xl text-[#7b223c]">
+    //           {feature.title}
+    //         </div>
+    //         <div className="text-xl text-gray-500 mt-1">{feature.subtitle}</div>
+    //       </div>
+    //     ))}
+    //   </div>
+
+    //   <div className="flex justify-center">
+    //     <button
+    //       type="submit"
+    //       className="bg-[#a6012d] w-40 text-white font-semibold py-2  mt-4 rounded"
+    //       onClick={() => {
+    //         const el = document.getElementById("appointment-form");
+    //         el?.scrollIntoView({ behavior: "smooth" });
+    //       }}
+    //     >
+    //       Book Appointment
+    //     </button>
+    //   </div>
+    // </div>
+    <div className="py-12 px-4 mx-auto py-8 bg-[#f8e9dc]">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
         Why Patients Choose Dr. Amit
       </h2>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-        {features.map((feature, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-start p-5 min-h-[140px]"
-          >
-            <div className="mb-3">{feature.icon}</div>
-            <div className="font-semibold text-[#7b223c]">{feature.title}</div>
-            <div className="text-xs text-gray-500 mt-1">{feature.subtitle}</div>
-          </div>
-        ))}
-      </div> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center text-center p-5 min-h-[140px]"
+            className="bg-white hover:bg-[#f8e9dc] hover:border-black rounded-xl border border-gray-200 shadow-sm flex flex-col items-center text-center p-5 min-h-[140px] transition-transform duration-300 hover:scale-105 hover:p-7"
+            style={{ willChange: "transform, padding" }}
           >
             <div className="mb-3 text-3xl">{feature.icon}</div>
             <div className="font-semibold text-2xl text-[#7b223c]">
@@ -133,7 +155,7 @@ const WhyChoose = () => {
       <div className="flex justify-center">
         <button
           type="submit"
-          className="bg-[#a6012d] w-40 text-white font-semibold py-2  mt-4 rounded"
+          className="bg-[#a6012d] hover:bg-white hover:text-[#a6012d] hover:border-2 w-40 text-white font-semibold py-2 mt-8 rounded"
           onClick={() => {
             const el = document.getElementById("appointment-form");
             el?.scrollIntoView({ behavior: "smooth" });

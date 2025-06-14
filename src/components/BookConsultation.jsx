@@ -42,13 +42,13 @@ const BookConsultation = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center py-12 px-4"
+      className="relative bg-center py-12 px-4"
       // style={{
       //   backgroundImage: `url(${bgImg})`,
       // }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-70 pointer-events-none" />
+      <div className="absolute inset-0 bg-[#a6012d] pointer-events-none" />
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
         {/* Left: Info */}
         <div className="flex-1 text-white">
@@ -156,7 +156,7 @@ const BookConsultation = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-[#a6012d] w-40 text-white font-semibold py-2 rounded"
+              className="bg-[#a6012d] hover:bg-white hover:text-black hover:border-2 hover:border-[#a6012d] w-40 text-white font-semibold py-2 rounded"
             >
               Book Appointment
             </button>

@@ -23,8 +23,8 @@ const FAQ = () => {
   const [open, setOpen] = useState(null);
 
   return (
-    <div className="bg-[#393939] py-10 px-4">
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-8">
+    <div className=" bg-[#f8e9dc] py-16 px-4">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-[#a6012d] mb-8">
         FAQ
       </h2>
       <div className="max-w-2xl mx-auto flex flex-col gap-4">
@@ -40,7 +40,7 @@ const FAQ = () => {
               </span>
               <span className="ml-4">
                 <svg
-                  className={`w-6 h-6 text-yellow-500 transition-transform duration-200 ${
+                  className={`w-6 h-6 text-[a6012d] transition-transform duration-200 ${
                     open === idx ? "rotate-180" : ""
                   }`}
                   fill="currentColor"

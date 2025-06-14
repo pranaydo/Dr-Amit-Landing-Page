@@ -12,7 +12,7 @@ const MeetDr = () => {
             alt="Dr. Amit Chakraborty"
             className="w-56 h-auto ml-2 rounded-lg top-12  "
           />
-          <span className="inline-block bg-[#a6012d] text-white font-semibold px-10 py-2 rounded-sm text-sm">
+          <span className="inline-block bg-[#a6012d] text-white font-semibold px-10 py-3 mt-[-2px] rounded-sm text-sm">
             Dr. Amit Chakraborty
           </span>
         </div>
@@ -22,7 +22,10 @@ const MeetDr = () => {
           <h2 className="text-3xl font-bold mb-4 text-[#a6012d]">
             Meet the Doctor
           </h2>
-          <p className="text-xl text-black md:text-base mb-6 leading-relaxed">
+          <p
+            className="text-2xl lg:text-[20px]
+ text-black md:text-base mb-6 leading-relaxed"
+          >
             Dr. Amit Chakraborty is an esteemed Surgical Oncologist based in
             Mumbai, Nagpur, and Dubai. He brings 18+ years of advanced
             experience to his practice. Notably, he is a pioneer in
@@ -45,7 +48,7 @@ const MeetDr = () => {
           </ul> */}
 
           <div className="flex justify-center items-center h-full w-full">
-            <ul className="space-y-3 text-2xl md:text-base text-center">
+            <ul className="space-y-3 text-2xl lg:text-2xl md:text-base text-center">
               <li className="flex items-center justify-center text-[#a6012d]">
                 <span className="mr-2">🏅</span> 18 years experience
               </li>
