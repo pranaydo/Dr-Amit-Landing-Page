@@ -22,6 +22,8 @@ const Home = () => {
       <ConditionsProcedures />
       <WhyChoose />
       <MeetDr />
+      <Hero isMiddleHero={true} />
+
       <TreatmentJourney />
       <PatientStories />
       <FAQ />

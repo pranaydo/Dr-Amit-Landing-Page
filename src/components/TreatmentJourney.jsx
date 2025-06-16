@@ -90,7 +90,7 @@ const TreatmentJourney = () => {
       }}
     >
       {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-[#a6012d] bg-opacity-90 z-0" />
+      <div className="absolute inset-0 bg-[#a6012d]  z-0" />
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-12 drop-shadow">
           Your Treatment Journey

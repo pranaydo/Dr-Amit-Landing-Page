@@ -3,7 +3,7 @@ import doc from "../assets/banner-img.webp";
 import operative from "../assets/doctor-operating.webp";
 import { useNavigate } from "react-router-dom";
 
-const HeroWithForm = () => {
+const HeroWithForm = ({ isMiddleHero }) => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -44,15 +44,19 @@ const HeroWithForm = () => {
     }
   };
   return (
-    <section className="bg-[#a6012d] text-white py-12 px-4 md:px-16">
+    <section
+      className={` text-white py-12 px-4 md:px-16 ${
+        isMiddleHero ? "bg-[#f8e9dc]" : ""
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        <div className="md:w-1/2 flex flex-col items-center text-center">
-          <img src={operative} alt="Doctor" className="rounded-lg w-60 mb-6" />
+        <div className="md:w-1/2 flex flex-col items-center text-center text-black">
+          {/* <img src={operative} alt="Doctor" className="rounded-lg w-60 mb-6" /> */}
           <h1 className="text-3xl md:text-4xl font-semibold mb-2">
             Head & Neck Cancer Specialist <br />{" "}
             <span className="text-[#be953f]">Dr. Amit Chakraborty,</span> Mumbai
           </h1>
-          <p className="text-xl md:text-base text-gray-300">
+          <p className="text-xl md:text-base ">
             18+ yrs experience · Robotic & minimally-invasive surgery
           </p>
           {/* <div className="flex flex-wrap justify-between gap-4 p-4">
@@ -260,9 +264,19 @@ const HeroWithForm = () => {
         {/* Right Side - Contact Form */}
         <div
           id="appointment-form"
-          className="md:w-1/2 bg-white text-black p-6 rounded-2xl shadow-lg w-full"
+          className={` ${
+            isMiddleHero
+              ? "md:w-1/2  text-black p-6 rounded-2xl  w-full"
+              : "md:w-1/2 bg-white text-black p-6 rounded-2xl  shadow-2xl w-full"
+          }`}
         >
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form
+            onSubmit={handleSubmit}
+            // className=""
+            className="bg-white rounded-2xl p-6 shadow-2xl
+ space-y-4"
+            style={{ boxShadow: "0 4px 24px 0 rgba(166, 1, 45, 0.25)" }}
+          >
             <div>
               <label className="block text-sm font-medium"> Full Name</label>
               <input
@@ -297,7 +311,7 @@ const HeroWithForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-[#a6012d]  hover:text-black hover:bg-white border-2 border-[#a6012d] w-40 text-white font-semibold py-2 rounded"
+                className="bg-[#a6012d]  hover:text-black hover:bg-white border-2 border-black w-40 text-white font-semibold py-2 rounded"
               >
                 Book Appointment
               </button>

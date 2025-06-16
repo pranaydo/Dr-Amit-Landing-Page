@@ -24,7 +24,7 @@ const Footer = () => (
       {/* Call button */}
       <a
         href="tel:+918657717988"
-        className="bg-[#a6012d] text-white hover:bg-white hover:text-black hover:border-2 hover:border-[#a6012d] text-sm font-semibold px-4 py-2 rounded-sm flex items-center gap-2"
+        className="bg-[#a6012d] text-white hover:bg-white hover:text-black border-2 border-black text-sm font-semibold px-4 py-2 rounded-sm flex items-center gap-2"
       >
         <svg
           className="w-4 h-4 "

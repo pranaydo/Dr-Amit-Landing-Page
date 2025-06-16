@@ -133,7 +133,7 @@ const WhyChoose = () => {
     //     </button>
     //   </div>
     // </div>
-    <div className="py-12 px-4 mx-auto py-8 bg-[#f8e9dc]">
+    <div className="py-12 px-4 mx-auto py-8 bg-white">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#7b223c]">
         Why Patients Choose Dr. Amit
       </h2>
@@ -157,7 +157,7 @@ const WhyChoose = () => {
       <div className="flex justify-center">
         <button
           type="submit"
-          className="bg-[#a6012d] hover:bg-white hover:text-[#a6012d] hover:border-2 w-40 text-white font-semibold py-2 mt-8 rounded"
+          className="bg-[#a6012d] hover:bg-white hover:text-[#a6012d] border-2 border-black w-40 text-white font-semibold py-2 mt-8 rounded"
           onClick={() => {
             const el = document.getElementById("appointment-form");
             el?.scrollIntoView({ behavior: "smooth" });
