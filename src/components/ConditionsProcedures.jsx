@@ -7,7 +7,7 @@ import {
   FaUserMd,
   FaProcedures,
 } from "react-icons/fa";
-import procedureImg from "../assets/neck.webp"; // Replace with actual image
+import procedureImg from "../assets/neck.webp";
 
 const ConditionsProcedures = () => {
   const conditions = [
@@ -37,24 +37,26 @@ const ConditionsProcedures = () => {
     },
   ];
   return (
-    <section className=" px-4 py-12 lg:px-20">
+    <section className="px-4 py-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         {/* Left - Text & List */}
-        <div className="lg:w-1/2 lg:pl-24">
+        <div className="lg:w-1/2 lg:pl-24 w-full text-center lg:text-left">
           <h2 className="text-3xl font-bold text-[#7a0c2e] mb-6">
             Conditions & Procedures Treated
           </h2>
-
           <ul className="space-y-5">
             {conditions.map((item, index) => (
-              <li key={index} className="flex items-start gap-3">
+              <li
+                key={index}
+                className="flex flex-col items-center lg:flex-row lg:items-start gap-3"
+              >
                 <span>{item.icon}</span>
                 <p className="text-black-800 text-xl">{item.label}</p>
               </li>
             ))}
           </ul>
         </div>
-
+        {/* Right - Image */}
         <div className="lg:w-1/2 overflow-hidden flex justify-center items-center">
           <div className="w-full max-w-md aspect-[4/3] border-2 border-[#7a0c2e] shadow-lg rounded-tr-3xl rounded-bl-3xl overflow-hidden flex items-center justify-center bg-white">
             <img

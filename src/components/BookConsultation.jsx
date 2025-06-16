@@ -21,7 +21,7 @@ const BookConsultation = () => {
 
     try {
       const response = await fetch(
-        "https://hooks.zapier.com/hooks/catch/22908877/uycgz9d/",
+        "https://hooks.zapier.com/hooks/catch/22908877/uoy9px5/",
         {
           method: "POST",
           // headers: {

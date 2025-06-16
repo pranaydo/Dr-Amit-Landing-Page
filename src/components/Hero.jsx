@@ -21,7 +21,8 @@ const HeroWithForm = () => {
 
     try {
       const response = await fetch(
-        "https://hooks.zapier.com/hooks/catch/22908877/uycgz9d/",
+        // "https://hooks.zapier.com/hooks/catch/22908877/uycgz9d/",
+        "https://hooks.zapier.com/hooks/catch/22908877/uoy9px5/",
         {
           method: "POST",
           // headers: {
@@ -54,7 +55,7 @@ const HeroWithForm = () => {
           <p className="text-xl md:text-base text-gray-300">
             18+ yrs experience · Robotic & minimally-invasive surgery
           </p>
-          <div className="flex flex-wrap justify-between gap-4 p-4">
+          {/* <div className="flex flex-wrap justify-between gap-4 p-4">
             <div className="flex-1 min-w-[70px] max-w-[100px]   rounded p-3 text-center">
               <svg
                 width="50"
@@ -253,7 +254,7 @@ const HeroWithForm = () => {
                 ></path>{" "}
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Side - Contact Form */}

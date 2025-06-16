@@ -24,7 +24,7 @@ const MeetDr = () => {
             <h2 className="text-4xl font-bold mb-6 text-[#a6012d]">
               Meet the Doctor
             </h2>
-            <p className="text-2xl lg:text-2xl text-black md:text-lg mb-8 leading-relaxed">
+            <p className="text-xl lg:text-xl text-black md:text-lg mb-8 leading-relaxed">
               Dr. Amit Chakraborty is an esteemed Surgical Oncologist based in
               Mumbai, Nagpur, and Dubai. He brings 18+ years of advanced
               experience to his practice. Notably, he is a pioneer in
