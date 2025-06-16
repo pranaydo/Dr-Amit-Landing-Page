@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 const Thankyou = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-[#f8e9dc]">
       <Header />
-      <div className="min-h-screen flex flex-col justify-center items-center bg-[#f8e9dc] px-4 py-16">
+      <main className="flex-1 flex flex-col justify-center items-center px-4 py-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center max-w-md w-full">
           {/* Success Icon */}
           <div className="mb-4">
@@ -49,9 +49,9 @@ const Thankyou = () => {
             Back to Home
           </a>
         </div>
-      </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
