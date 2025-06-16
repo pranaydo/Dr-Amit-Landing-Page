@@ -60,7 +60,7 @@
 // export default TreatmentJourney;
 
 import React from "react";
-import bgImg from "../assets/14.png";
+// import bgImg from "../assets/14.png";
 
 const steps = [
   {
@@ -83,12 +83,7 @@ const steps = [
 
 const TreatmentJourney = () => {
   return (
-    <div
-      className="relative bg-cover bg-center py-16 px-2 sm:px-4 min-h-[700px]"
-      style={{
-        backgroundImage: `url(${bgImg})`,
-      }}
-    >
+    <div className="relative bg-cover bg-center py-16 px-2 sm:px-4 min-h-[700px]">
       {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-[#a6012d]  z-0" />
       <div className="relative z-10 w-full max-w-6xl mx-auto">

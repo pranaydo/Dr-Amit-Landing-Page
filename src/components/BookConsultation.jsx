@@ -173,7 +173,7 @@
 // export default BookConsultation;
 
 import React, { useState } from "react";
-import bgImg from "../assets/12.png";
+// import bgImg from "../assets/12.png";
 import { useNavigate } from "react-router-dom";
 
 const BookConsultation = () => {

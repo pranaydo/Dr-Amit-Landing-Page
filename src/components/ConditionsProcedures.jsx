@@ -83,7 +83,7 @@ import {
   FaUserMd,
   FaProcedures,
 } from "react-icons/fa";
-import procedureImg from "../assets/neck.webp";
+// import procedureImg from "../assets/neck.webp";
 
 const ConditionsProcedures = () => {
   const conditions = [

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import doc from "../assets/banner-img.webp";
-import operative from "../assets/doctor-operating.webp";
+// import operative from "../assets/doctor-operating.webp";
 import { useNavigate } from "react-router-dom";
 
 const HeroWithForm = ({ isMiddleHero }) => {
