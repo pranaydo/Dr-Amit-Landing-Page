@@ -10,10 +10,12 @@ import TreatmentJourney from "./TreatmentJourney";
 import FAQ from "./FAQ";
 import BookConsultation from "./BookConsultation";
 import Banner from "./Banner";
+import FloatingButtons from "./Floating";
 
 const Home = () => {
   return (
     <div>
+      <FloatingButtons />
       <Header />
       <Banner />
       <Hero />
