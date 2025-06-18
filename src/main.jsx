@@ -29,9 +29,9 @@ import Thankyou from "./components/Thankyou";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <>
     <BrowserRouter basename="/specialist">
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </>
 );
