@@ -1,81 +1,29 @@
-// import React from "react";
-// import bgImg from "../assets/14.png";
-
-// const steps = [
-//   {
-//     title: "Consult & Diagnosis",
-//     desc: "Comprehensive exam, PET-CT, biopsy, and review to understand your condition clearly.",
-//   },
-//   {
-//     title: "Personalised Plan",
-//     desc: "A custom plan combining surgery, chemo, or radiotherapy, explained clearly and kindly.",
-//   },
-//   {
-//     title: "Expert Treatment",
-//     desc: "Advanced techniques like robotic surgery with pain-managed, expert-led care.",
-//   },
-//   {
-//     title: "Recovery & Follow-up",
-//     desc: "Comprehensive rehab, PET-CT scans, and reviews to understand your condition clearly.",
-//   },
-// ];
-
-// const TreatmentJourney = () => {
-//   return (
-//     <div
-//       className="relative bg-cover bg-center py-6 pb-8 px-2 sm:px-4"
-//       // style={{
-//       //   backgroundImage: `url(${bgImg})`,
-//       // }}
-//     >
-//       {/* Overlay for better readability */}
-//       <div className="absolute inset-0 bg-[#a6012d]  z-0" />
-//       <div className="relative z-10 w-full max-w-5xl mx-auto">
-//         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 drop-shadow">
-//           Your Treatment Journey
-//         </h2>
-//         <div className="flex flex-col gap-6">
-//           {steps.map((step, idx) => (
-//             <div
-//               key={idx}
-//               className="bg-white bg-opacity-95 rounded-xl sm:rounded-2xl shadow-lg flex items-start p-6 w-full mx-auto"
-//             >
-//               <div className="text-4xl font-bold text-[#7b223c] mr-4">
-//                 {idx + 1}
-//               </div>
-//               <div>
-//                 <div className="font-semibold text-[#7b223c] text-lg mb-1">
-//                   {step.title}
-//                 </div>
-//                 <div className="text-gray-700 text-sm">{step.desc}</div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TreatmentJourney;
-
 import React from "react";
-// import bgImg from "../assets/14.png";
+import {
+  FaStethoscope,
+  FaClipboardList,
+  FaUserMd,
+  FaHeartbeat,
+} from "react-icons/fa";
 
 const steps = [
   {
+    icon: <FaStethoscope className="text-5xl text-[#7b223c] mb-4" />,
     title: "Consult & Diagnosis",
     desc: "Comprehensive exam, PET-CT, biopsy, and review to understand your condition clearly.",
   },
   {
+    icon: <FaClipboardList className="text-5xl text-[#7b223c] mb-4" />,
     title: "Personalised Plan",
     desc: "A custom plan combining surgery, chemo, or radiotherapy, explained clearly and kindly.",
   },
   {
+    icon: <FaUserMd className="text-5xl text-[#7b223c] mb-4" />,
     title: "Expert Treatment",
     desc: "Advanced techniques like robotic surgery with pain-managed, expert-led care.",
   },
   {
+    icon: <FaHeartbeat className="text-5xl text-[#7b223c] mb-4" />,
     title: "Recovery & Follow-up",
     desc: "Comprehensive rehab, PET-CT scans, and reviews to understand your condition clearly.",
   },
@@ -84,8 +32,7 @@ const steps = [
 const TreatmentJourney = () => {
   return (
     <div className="relative bg-cover bg-center py-16 px-2 sm:px-4 min-h-[700px]">
-      {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-[#a6012d]  z-0" />
+      <div className="absolute inset-0 bg-[#a6012d] z-0" />
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-12 drop-shadow">
           Your Treatment Journey
@@ -94,11 +41,9 @@ const TreatmentJourney = () => {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white bg-opacity-95 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center p-8 min-h-[220px]"
+              className="bg-white bg-opacity-95 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center  min-h-[180px]"
             >
-              <div className="text-5xl font-bold text-[#7b223c] mb-4">
-                {idx + 1}
-              </div>
+              <div>{step.icon}</div>
               <div>
                 <div className="font-semibold text-[#7b223c] text-xl mb-2">
                   {step.title}

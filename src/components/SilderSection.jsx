@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// import pic1 from "../assets/12.png";
-// import pic2 from "../assets/13.png";
-// import pic3 from "../assets/14.png";
+import pic1 from "../assets/1.jpeg";
+import pic2 from "../assets/2.jpeg";
+import pic3 from "../assets/3.jpeg";
 
 // Example images array (replace with your own images)
-const images = ["pic1", "pic2", "pic3"];
+const images = [pic1, pic2, pic3];
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);
@@ -45,7 +45,7 @@ const Slider = () => {
         onTouchEnd={handleTouchEnd}
       >
         <img
-          // src={images[current]}
+          src={images[current]}
           alt={`slide-${current}`}
           className="w-full h-full object-cover"
         />
