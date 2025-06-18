@@ -13,16 +13,27 @@ const MeetDr = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-10 min-h-[400px] relative">
           {/* Left - Doctor Image & Label at the bottom */}
           <div className="relative flex-1 flex flex-col justify-end items-center min-h-[320px]">
-            <div className="absolute top-[5px] bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center w-full pb-2">
+            {/* <div className="absolute top-[5px] left-1/2 -translate-x-1/2 flex flex-col items-center w-64 h-64  rounded-full border-4 border-[#a6012d] overflow-hidden">
               <img
                 src={banner}
                 alt="Dr. Amit Chakraborty"
-                className="w-56 md:w-115 h-auto rounded-lg ml-6"
+                className="w-40 h-40 object-cover rounded-full mt-4"
               />
-              <span className="inline-block bg-[#a6012d] text-white font-semibold px-10 md:px-36 py-4 border-2 border-[#a6012d] rounded-lg text-sm ">
+              {/* <span className="mt-4 bg-[#a6012d] text-white font-semibold px-4 py-2 text-center text-sm rounded-lg border border-white">
                 Dr. Amit Chakraborty
-              </span>
+              </span> */}
+            {/* </div> */}
+            <div className="w-80 h-80 rounded-full border-4 border-[#a6012d] flex items-center justify-center overflow-hidden ">
+              <img
+                src={banner}
+                alt="Dr. Amit Chakraborty"
+                className="w-80 h-80 object-cover rounded-full"
+              />
             </div>
+
+            <span className="bg-[#a6012d] text-white font-semibold px-6 py-4 text-center text-xl rounded-lg border border-white">
+              Dr. Amit Chakraborty
+            </span>
           </div>
           {/* Right - Bio & Bullets */}
           <div className="flex-1 flex flex-col justify-center items-start">
