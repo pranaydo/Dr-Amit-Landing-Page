@@ -1,3 +1,4 @@
+import { Bot } from "lucide-react";
 import React from "react";
 import { FaRegCalendarCheck } from "react-icons/fa"; // Add this import
 import { FaHandshakeSimple } from "react-icons/fa6";
@@ -5,7 +6,7 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 const features = [
   {
     icon: <FaRegCalendarCheck className="w-8 h-8 text-[#7b223c]" />,
-    title: "10+ yrs / 25k+ surgeries",
+    title: "18+ yrs experience",
     subtitle: "seasoned expertise",
   },
   {
@@ -26,16 +27,17 @@ const features = [
   },
   {
     icon: (
-      <svg
-        className="w-8 h-8 text-[#7b223c]"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        viewBox="0 0 24 24"
-      >
-        <rect x="3" y="11" width="18" height="10" rx="2" />
-        <path d="M7 11V7a5 5 0 0110 0v4" />
-      </svg>
+      // <svg
+      //   className="w-8 h-8 text-[#7b223c]"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   strokeWidth="2"
+      //   viewBox="0 0 24 24"
+      // >
+      //   <rect x="3" y="11" width="18" height="10" rx="2" />
+      //   <path d="M7 11V7a5 5 0 0110 0v4" />
+      // </svg>
+      <Bot className="w-10 h-10 text-[#7b223c]" />
     ),
     title: "Robotic & laser techniques",
     subtitle: "less pain, faster recovery",
@@ -50,7 +52,7 @@ const features = [
         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z" />
       </svg>
     ),
-    title: "4.9 / Google rating & 1000+ grateful families",
+    title: "4.9/5 Google rating & 1000+ grateful families",
     subtitle: "proven trust",
   },
   {

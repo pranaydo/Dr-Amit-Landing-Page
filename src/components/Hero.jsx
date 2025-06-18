@@ -58,8 +58,8 @@ const HeroWithForm = ({ isMiddleHero }) => {
             <span className="text-[#be953f]">Dr. Amit Chakraborty,</span> Mumbai
           </h1>
           {!isMiddleHero && (
-            <p className="text-xl md:text-base text-center">
-              🏅 18+ yrs experience
+            <p className="text-xl md:text-base text-center text-[#a6012d] font-semibold">
+              🏅 <span className="">18+ yrs experience</span>
               <br />
               <span className="inline-flex items-center justify-center gap-2">
                 <Bot className="w-5 h-5" />

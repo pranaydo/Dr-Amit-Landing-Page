@@ -41,14 +41,14 @@ const TreatmentJourney = () => {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white bg-opacity-95 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center  min-h-[180px]"
+              className="bg-white bg-opacity-95 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center  min-h-[180px] m-4"
             >
               <div>{step.icon}</div>
               <div>
                 <div className="font-semibold text-[#7b223c] text-xl mb-2">
                   {step.title}
                 </div>
-                <div className="text-gray-700 text-base">{step.desc}</div>
+                <div className="text-gray-700 text-base m-2">{step.desc}</div>
               </div>
             </div>
           ))}

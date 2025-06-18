@@ -38,7 +38,7 @@ const Slider = () => {
     <div className=" bg-[#f8e9dc] w-full  mx-auto relative px-2 lg:px-12 py-4 lg:py-8">
       {/* Image */}
       <div
-        className="w-full h-64 sm:h-80 lg:h-[32rem] flex items-center justify-center overflow-hidden rounded-lg"
+        className="w-full h-64 sm:h-80 lg:h-[32rem] flex items-center justify-center overflow-hidden rounded-lg p-4 "
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -46,7 +46,7 @@ const Slider = () => {
         <img
           src={images[current]}
           alt={`slide-${current}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover shadow-xl "
         />
       </div>
       {/* Desktop Controls */}
